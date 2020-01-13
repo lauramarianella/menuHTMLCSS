@@ -1,0 +1,73 @@
+﻿@import "~/Content/bootstrap/css/less/variables.less";
+/****
+	DESIGN TO FORMAT TABLE FOR MOBILE DEVICES
+	*****/
+.no-more-table {
+	border-collapse: collapse;
+
+	td, th {
+		text-align: left;
+	}
+
+		td span.th {
+			display: none;
+		}
+}
+//show no more table only when the width is less than 900px
+@media only screen and (max-width: 899px) {
+
+	.no-more-table {
+		display: block;
+		width: auto !important;
+		/* Force table to not be like tables anymore */
+		thead, tbody, th, td, tr {
+			display: block;
+		}
+			/* Hide table headers (but not display: none;, for accessibility) */
+			thead tr {
+				position: absolute;
+				top: -9999px;
+				left: -9999px;
+			}
+
+		tr {
+			border: 1px solid @grayLight;
+		}
+
+		td {
+			/* Behave  like a "row" */
+			border: none;
+			border-bottom: 1px solid @grayLighter !important;
+			position: relative;
+			padding-left: 50% !important;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			width: auto;
+
+			div, span {
+				overflow: hidden;
+				text-overflow: ellipsis;
+				max-width: 100%;
+			}
+		}
+
+		&.no-header {
+			td {
+				padding-left: 6px !important;
+			}
+		}
+
+		td span.th {
+			display: inline !important;
+			/* Now like a table header */
+			position: absolute;
+			/* Top/left values mimic padding */
+			top: 6px;
+			left: 6px;
+			width: 45%;
+			padding-right: 10px;
+			white-space: nowrap;
+			font-weight: bold;
+		}
+	}
+}
