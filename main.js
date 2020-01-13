@@ -47,17 +47,18 @@ function calcWidth() {
   var availablespace =
     $('#new-header-theme > .navbar-inner').width() - morewidth;
 
-  //   if (navwidth > availablespace) {
-  //     var lastItem = $('.main-menu > li:not(.menu-more)').last();
-  //     lastItem.attr('data-width', lastItem.outerWidth(true));
-  //     lastItem.prependTo($('.main-menu .menu-more ul.dropdown-menu'));
-  //     calcWidth();
-  //   } else {
-  //     var firstMoreElement = $('.main-menu li.menu-more li').first();
-  //     if (navwidth + firstMoreElement.data('width') < availablespace) {
-  //       firstMoreElement.insertBefore($('.main-menu .menu-more'));
-  //     }
-  //   }
+    /*if (navwidth > availablespace) {
+      var lastItem = $('.main-menu > li:not(.menu-more)').last();
+      lastItem.attr('data-width', lastItem.outerWidth(true));
+      lastItem.prependTo($('.main-menu .menu-more ul.dropdown-menu'));
+      calcWidth();
+      
+    } else {
+      var firstMoreElement = $('.main-menu li.menu-more li').first();
+      if (navwidth + firstMoreElement.data('width') < availablespace) {
+        firstMoreElement.insertBefore($('.main-menu .menu-more'));
+      }
+    }*/fixMenu(navwidth, availablespace);
 }
 
 // (function(Brainbank, $, undefined) {
@@ -137,3 +138,42 @@ $(document).ready(function() {
     ).removeClass('active');
   }
 });
+
+
+let fixMenu = (navwidth, availablespace) => {
+  let ulMainMenuCollection = document.getElementsByClassName("main-menu");//should have an Id, as it has not Id then get it by className
+  let ulMainMenu = ulMainMenuCollection.item(0);
+
+  let liMenuItems = [];
+  ulMainMenu.querySelectorAll(":scope > li").forEach(li => liMenuItems.push(li));
+
+  let liMenuItemMore = document.getElementsByClassName("menu-more").item(0);//should have an Id, as it has not Id then get it by className
+
+  /**when the screen shrinks, menu must be inserted in menu-more */
+  if (navwidth > availablespace) {//inserting adjacent-menu in menu-more
+    let menu_before_LiMenuMore = liMenuItems[liMenuItems.length-2];
+    //console.log('menu_before_LiMenuMore.querySelectorAll("ul").length ', menu_before_LiMenuMore.querySelectorAll("ul").length);
+    if(menu_before_LiMenuMore.querySelectorAll("ul").length>0){//if it has children means it is a menu(has an UL inside for the submenu)
+      menu_before_LiMenuMore.className = 'Resources-btn dropdown-submenu';
+    }else{
+      menu_before_LiMenuMore.className = '';//when the item-menu does not have submenu, it only occups its width so we have to remove the styles
+    }
+    
+    liMenuItemMore.querySelector("ul").prepend(menu_before_LiMenuMore);
+    menu_before_LiMenuMore.dataset.myWidth = menu_before_LiMenuMore.offsetWidth;
+
+  } else {//expanded screen, remove menues from menu-more
+      //console.log('liMenuItemMore.querySelectorAll(":scope > li") ', liMenuItemMore.querySelectorAll(":scope > li").length);
+      liMenuItemMore.querySelectorAll(":scope > ul >li").forEach(
+        itemMenu => {
+          console.log(itemMenu, itemMenu.dataset.myWidth);
+          if(itemMenu.dataset.myWidth>=0){
+            //if (navwidth + itemMenu.dataset.myWidth  < availablespace) {
+              ulMainMenu.insertBefore(itemMenu, liMenuItemMore);
+              itemMenu.className = 'Resources-btn dropdown';
+            //}
+          }
+      });
+  }
+}
+
