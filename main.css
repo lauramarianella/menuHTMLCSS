@@ -5734,7 +5734,7 @@ h1.idea-list-title {
 
 @media only screen and (min-width: 1680px) {
   #idea-list .item .idea-vote {
-    margin-right: 50px; } }
+    margin-right: 50px; } } 
 
 @media (max-width: 1680px) {
   .SubmitAnIdea-master-page .upload-control .gallery {
@@ -5744,9 +5744,9 @@ h1.idea-list-title {
   .expanding-grid {
     max-width: 1368px; }
   #idea-list .item.viewToggle .dog-ear {
-    left: 92px; } }
+    left: 92px; } } 
 
-@media (max-width: 1679px) and (min-width: 1441px) {
+ @media (max-width: 1679px) and (min-width: 1441px) {
   .details-view .idea-header.row > .span2 {
     width: 23% !important; }
   .SubmitAnIdea-master-page .upload-control .gallery {
@@ -5756,7 +5756,7 @@ h1.idea-list-title {
   #idea-list .item.viewToggle .dog-ear {
     left: 86px; } }
 
-@media (max-width: 1440px) {
+ @media (max-width: 1440px) {
   #idea-list .item.viewToggle .dog-ear {
     left: 80px; }
   .SubmitAnIdea-master-page .upload-control .gallery {
@@ -5781,7 +5781,7 @@ h1.idea-list-title {
   #idea-list .item .idea-vote {
     margin-right: -5px; } }
 
-@media (max-width: 1300px) {
+ @media (max-width: 1300px) {
   #idea-list .item.viewToggle .dog-ear {
     left: 68px; }
   .atAGlanceLeaderboardData {
@@ -5791,7 +5791,7 @@ h1.idea-list-title {
     max-width: 1018px; }
   .SubmitAnIdea-master-page .submitidea-page {
     margin: 50px 50px;
-    padding: 50px 50px; } }
+    padding: 50px 50px; } } 
 
 @media (max-width: 1024px) {
   .ideaview-page.new-idea-theme .idea-content #manageIdeaBtn {
@@ -5801,7 +5801,7 @@ h1.idea-list-title {
   .new-header-menu .nav.pull-right {
     margin-left: -10px; }
   #new-header-theme .main-menu.nav-collapse li {
-    font-size: 14px; }
+    font-size: 14px; } */
   /*********************************
   	Everything above is new
   ****************************************/
@@ -5857,7 +5857,7 @@ h1.idea-list-title {
   #idea-list .idea-details.span9 {
     width: 70%; }
   #idea-list .rightSideIdeaInfo.span3 {
-    width: 27%; } }
+    width: 27%; } } 
 
 @media (max-width: 480px) {
   #activities-notification-container {
@@ -6112,7 +6112,8 @@ h1.idea-list-title {
     min-height: 350px; }
   /*.brand.header-logo {
 		width: 400px !important;
-	}*/ }
+  }*/
+}
 
 @media (max-width: 1024px) {
   .objective-statement-img {

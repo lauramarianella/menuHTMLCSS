@@ -141,6 +141,12 @@ $(document).ready(function() {
 
 
 let fixMenu = (navwidth, availablespace) => {
+
+document.getElementById("idContainerMenues").style.height="54px";//some style is changing the height making it bigger
+// let widthMenues = document.getElementById("idMenues").clientWidth;console.log('widthMenues ', widthMenues);
+// let widthAdminMenu = document.getElementById("idAdminMenu").clientWidth;console.log('widthAdminMenu ', widthAdminMenu);
+// let widthMenu = document.getElementById("idMenu").clientWidth;console.log('widthMenu ', widthMenu);
+
   let ulMainMenuCollection = document.getElementsByClassName("main-menu");//should have an Id, as it has not Id then get it by className
   let ulMainMenu = ulMainMenuCollection.item(0);
 
@@ -152,6 +158,7 @@ let fixMenu = (navwidth, availablespace) => {
   /**when the screen shrinks, menu must be inserted in menu-more */
   if (navwidth > availablespace) {//inserting adjacent-menu in menu-more
     let menu_before_LiMenuMore = liMenuItems[liMenuItems.length-2];
+    if(menu_before_LiMenuMore.clientWidth>0) menu_before_LiMenuMore.dataset.myWidth = menu_before_LiMenuMore.clientWidth;//offsetWidth;//only when it is expanded it has a width
     //console.log('menu_before_LiMenuMore.querySelectorAll("ul").length ', menu_before_LiMenuMore.querySelectorAll("ul").length);
     if(menu_before_LiMenuMore.querySelectorAll("ul").length>0){//if it has children means it is a menu(has an UL inside for the submenu)
       menu_before_LiMenuMore.className = 'Resources-btn dropdown-submenu';
@@ -160,14 +167,14 @@ let fixMenu = (navwidth, availablespace) => {
     }
     
     liMenuItemMore.querySelector("ul").prepend(menu_before_LiMenuMore);
-    menu_before_LiMenuMore.dataset.myWidth = menu_before_LiMenuMore.offsetWidth;
+    
 
   } else {//expanded screen, remove menues from menu-more
       //console.log('liMenuItemMore.querySelectorAll(":scope > li") ', liMenuItemMore.querySelectorAll(":scope > li").length);
       liMenuItemMore.querySelectorAll(":scope > ul >li").forEach(
         itemMenu => {
-          console.log(itemMenu, itemMenu.dataset.myWidth);
           if(itemMenu.dataset.myWidth>=0){
+            console.log(itemMenu, itemMenu.dataset.myWidth);
             //if (navwidth + itemMenu.dataset.myWidth  < availablespace) {
               ulMainMenu.insertBefore(itemMenu, liMenuItemMore);
               itemMenu.className = 'Resources-btn dropdown';

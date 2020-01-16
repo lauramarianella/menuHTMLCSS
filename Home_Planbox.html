@@ -141,8 +141,8 @@
     data-user-groups="users * administrators Reviewer_Safety opg_sandbox_Employees Reviewer_Engineering admin"
   >
   <header><!-- start: Header -->
-    <div id="new-header-theme" class="header-navbar navbar navbar-static-top">
-      <div class="navbar-inner">
+    <div id="new-header-theme" class="header-navbar navbar navbar-static-top" style="background-color:chocolate;">
+      <div class="navbar-inner" style="background-color:crimson;height: 54px !important;" id="idContainerMenues">
           <a class="btn btn-navbar frontend-navbar-btn" data-toggle="collapse" data-target=".nav-collapse.main-menu">
               <span class="icon-align-justify"></span>
           </a>
@@ -155,8 +155,9 @@
             <img src="//idealinkcdn.s3.amazonaws.com/Client/OPG/images/OPG-Launchpad-Logo2-green.png" alt="OPG Logo" class="is-internal">
             <img src="//d32ekf2zat2q3c.cloudfront.net/Client/OPG/icons/OPG%20Generate_Web.png" alt="OPG Logo" class="is-external">
           </a>
-          <div class="new-header-menu">
-            <div class="nav-collapse collapse header-nav">
+
+          <div class="new-header-menu" style="background-color:yellow;height: 54px !important;" id="idMenues">
+            <div class="nav-collapse collapse header-nav" id="idAdminMenu">
               <form action="/opg_sandbox-default/Ideas" class="navbar-form pull-left" method="get">
                 <div class="input-append"><input type="text" placeholder="Search for Ideas" id="Searchbox" name="search" class="span2" title="Search by idea number or by keywords"><button type="submit" class="btn btn-primary"><i class="icon-search icon-white"></i></button></div>
               </form>
@@ -226,7 +227,7 @@
                 </li>                  
               </ul>
             </div>
-            <ul class="main-menu nav-collapse">
+            <ul class="main-menu nav-collapse" id="idMenu" style="background-color:turquoise;">
               <li class="active" id="liHome"><a href="/opg_sandbox-default/Home/HomePage"><i class="icon-large icon-white icon-home"></i><span>Li-Home</span></a></li>
               <li id="liChallenges"><a href="/opg_sandbox-default/Challenges"><i class="icon-large icon-white icon-bullhorn"></i><span>Li-Challenges</span></a></li>
               <li id="liIdeas"><a href="/opg_sandbox-default/Ideas"><i class="icon-large icon-white icon-lightbulb"></i><span>Li-Ideas</span></a></li>
@@ -240,8 +241,9 @@
                   <li id="liHowItWorks"><a href="/opg_sandbox-default/About/HowItWorks"><i class="icon-large icon-white icon-how-it-works"></i><span>Li-How It Works</span></a></li>
                 </ul>
               </li>
-          </ul>
+            </ul>
           </div>
+
           <!-- end: Header Menu -->
       </div>
     </div>
