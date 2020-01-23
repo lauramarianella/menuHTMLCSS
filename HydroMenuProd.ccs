@@ -1,0 +1,984 @@
+html {
+   -ms-overflow-style: scrollbar;
+}
+.dt-ideacategories, .dd-ideacategories{display:none;}
+.help-block{
+	white-space: normal !important;
+}
+#liSurveys{display: none;}
+body{font-family: 'Open Sans', sans-serif !important;}
+#challenge-list-container .challenge .challenge-thumb img{display:none;}
+.advanced-search-categories .select2-choices{display:none;}
+.advanced-search-categories .select2-container .select-group{margin-bottom: 30px;}
+.advanced-search-categories .select2-container .select-group a{left:0 !important;right: unset;}
+.challenge-response .challenge-thumb img{display:none !important;}
+header{
+    position: fixed;
+    height: 133px;
+    width: 100%;
+    z-index: 10000;	
+}
+.sub-container{
+	width: 1170px;
+    margin: 0 auto;
+}
+.Home-master-page .sub-container{
+	background: url(//d32ekf2zat2q3c.cloudfront.net/Client/HydroOne/images/hydrtoone-planbox-header-image.jpg) no-repeat 0 48px fixed;
+	background-size:cover;
+  	width:100%;
+}
+.Home-master-page .main-content{background:transparent;}
+.navigation-btn #back{display:none;}
+.badge-list table tr td:nth-child(2){
+  display:none;
+}
+.badge-list .badge, .badge-tag {
+    color: #333!important;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+}
+.badge-list .badge:hover {
+    color: #333!important;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+}
+.user-info-header {
+    background: #5D2684;
+}
+.advanced-search-customproperties{display:none;}
+.avatar-image.open  ul li:nth-child(2) {
+    display:none;
+}
+#userSubscribedCommunities, #userTimeZone{display:none;}
+.agreement-register{
+  height: 150px;
+    overflow-x: scroll;
+    margin-right: 50px;
+    padding: 10px;
+    border: 1px solid silver;
+}
+.agreement-register-title{
+
+    margin-top: 20px;
+}
+.content-editable-toggle.edit-btn{position: absolute;right: 40px;margin-top: -10px;}
+.Home-master-page .content-editable-toggle.edit-btn{margin-top: 10px;}
+.content-editable-toggle.edit-btn:hover{color:#000000;}
+.Home-master-page .content-editable-toggle.edit-btn:hover{color:#ffffff;}
+.sub-container.container-fluid.full-width{padding-top:133px;}
+.dt-ideacommunity,.dd-ideacommunity{display:none;}
+.notification .close{display:none;}
+#challengeList #sortbar{display:none;}
+.btn-group.challenge-select-view{display:none;}
+.horizontal-top-menu .badge-important {
+    position: static;
+    top: -58px;
+    right: -55px;
+    display: inline-block;
+    margin-left: 8px;
+}
+body{font-size:16px;}
+.header-logo {
+    width: auto;
+    height: auto;
+    background: none;
+}
+.navbar .brand{
+    margin-top: 13px;
+}
+.horizontal-nav .nav{float:right;}
+.flag-item {
+    background-image: url(https://d32ekf2zat2q3c.cloudfront.net/Planbox/images/flag-white.png) !important;
+}
+.flag-item:hover {
+    background-image: url(https://d32ekf2zat2q3c.cloudfront.net/Planbox/images/flag-777.png) !important;
+}
+header .header-navbar {
+	width:100%;
+	margin: 0 auto;
+	background-color: #5D2684;
+}
+header .header-navbar .navbar-inner,header .horizontal-top-menu{
+	width: 1170px;
+    margin: 0 auto;
+	background-color: #5D2684;
+}
+header .header-navbar .navbar-inner,
+header .horizontal-top-menu .navbar-inner{
+	background-color: transparent;
+    background-image: none;
+    border:0;
+    filter: none;	
+}
+.nav-pills > .active > a, .nav-pills > .active > a:hover, .nav-pills > .active > a:focus {
+    color: white;
+    background-color: #5D2684;
+}
+.dropdown-menu > li > a{
+  color:#333 !important;
+}
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus, .dropdown-submenu:hover > a, .dropdown-submenu:focus > a {
+    text-decoration: none;
+    color: white!important;
+    background-color: #5D2684;
+    background-image: none;
+    filter: none;
+}
+.navbar .nav li.dropdown.open > .dropdown-toggle, .navbar .nav li.dropdown.active > .dropdown-toggle, .navbar .nav li.dropdown.open.active > .dropdown-toggle {
+    background-color: #5D2684;
+    color: #ffffff;
+}
+.header-nav .nav > li > a {
+    float: none;
+    padding: 10px 15px 10px;
+    color: #ffffff;
+    text-decoration: none;
+    text-shadow:none;
+}
+.header-nav .nav > li > a:hover {
+    color: #ffffff ;
+	text-decoration:underline;
+}
+.horizontal-top-menu .navbar-inner .nav li a i {
+    display: none;
+}
+.horizontal-top-menu .navbar-inner .nav li a {
+    height: auto;
+    min-height: auto;
+  color:#ffffff;
+}
+.horizontal-top-menu .navbar-inner .nav li a:hover {
+  color:#ffffff;
+  text-decoration:underline;
+}
+.horizontal-top-menu .navbar-inner .nav li {
+    border-left: 0;
+    border-right: 0;
+}
+.main-content {
+    border: 0;
+}
+body .sub-container.container-fluid {
+  padding-right: 0;
+    padding-left: 0;
+}
+.btn {
+    padding: 6px 12px;
+}
+.home-banner {
+	background-image: url(//idealinkcdn.s3.amazonaws.com/Client/HydroOne/images/120808-T%2BK-0354-H1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    width: 100%;
+    min-height: 510px;
+}
+
+ul.anchor li a{
+  background-color: #5D2684 !important;
+  padding: 5px 10px !important;
+  border-right: 4px solid white;
+  margin: 0 !important; 
+}
+.submitidea-page .anchor li .first.done{
+  background-image:none !important;
+  background-color: #cccccc !important;
+  padding-left: 5px!important;
+}
+.submitidea-page .anchor li .first.selected{
+  padding-left: 5px!important;
+}
+.submitidea-page .swMain ul.anchor li a.selected{
+    background-color: #5D2684!important;
+    background-image: none !important;
+}
+.submitidea-page .anchor li .disabled{
+  background-image:none !important;
+}
+.submitidea-page .anchor li .last.disabled span{
+  background-image:none !important;
+}
+.swMain ul.anchor li a.disabled{
+  color:#cccccc !important;
+}
+.submitidea-page .anchor li .last.selected span{
+  background-image:none !important;
+}
+.swMain ul.anchor li a span {
+    padding-right: 0px !important;
+}
+.anchor{
+  margin: 0 0 10px 0;
+}
+.swMain.ui-formwizard{
+  margin-top:20px;
+}
+.anchor li .done {
+    background: #666666 !important;
+}
+.challenge-page-title{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.btn,
+input[type="button"]{
+  background-image:none !important;
+  background-color:#efefef !important;
+  text-shadow: none;
+  color:#333333 !important;
+  box-shadow: none !important;
+  border:0;
+}
+.btn:hover,
+.btn:focus,
+input[type="button"]:hover, 
+input[type="button"]:focus, 
+input[type="button"]:active, 
+input[type="button"].active, 
+input[type="button"].disabled, 
+input[type="button"][disabled]{
+  background-color: #e6e6e6 !important;
+}
+.navbar-form .input-append .btn-primary{
+background-image:none !important;
+  background-color:#ffffff !important;
+  text-shadow: none;
+  color:#666666 !important;
+  box-shadow: none !important;
+  border:0;
+} 
+.navbar-form .input-append .btn-primary i.icon-white{
+	background-image: url(/Content/bootstrap/img/glyphicons-halflings.png);
+}
+.navbar-form .input-append .btn-primary:hover i.icon-white,.navbar-form .input-append .btn-primary:focus i.icon-white{
+	background-image: url(/Content/bootstrap/img/glyphicons-halflings-white.png);
+}
+.btn-primary,
+.submit-btn a,
+input[type="submit"],
+.take-challenge-btn,
+.read-more-button{
+  background-image:none !important;
+  background-color:#5D2684 !important;
+  text-shadow: none;
+  color:#ffffff !important;
+  box-shadow: none !important;
+  border:0;
+}
+
+.navbar-form .input-append .btn-primary:hover, 
+.navbar-form .input-append .btn-primary:focus,
+.btn-primary:hover,
+.btn-primary:focus,
+.submit-btn a:hover,
+.submit-btn a:focus,
+input[type="submit"]:hover,
+input[type="submit"]:focus,
+.take-challenge-btn:hover,
+.take-challenge-btn:focus,
+.read-more-button:hover,
+.read-more-button:focus{
+  background-color:#000000 !important;
+}
+.take-challenge-btn,.btn-takechallenge{
+  padding: 11px 19px;
+    font-size: 17.5px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+}
+#Searchbox{
+  height: 32px !important;
+  border-color: #5D2684;
+  color: #666666;
+    background-color: #ffffff;
+	border:0;
+}
+
+.horizontal-top-menu .nav > li > a {
+    text-shadow: none;
+}
+.horizontal-top-menu .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus {
+    background: transparent;
+    color: #ffffff;
+	text-decoration:underline;
+}
+
+a {
+    color: #5D2684;
+}
+.profile-details.functional-information > .control-group{display:none;}
+.profile-details h4{color:#5D2684;}
+
+.challenge-thumb {
+    margin: 10px;
+    width: 140px;
+    float: left;
+    margin-right: 20px;
+}
+.challenge-thumb img {
+    width: 250px;
+    height: auto;
+}
+.default-challenge-thumb {
+    /*background: url(https://idealinkcdn.s3.amazonaws.com/Client/OPG/images/Name-the-portal-Challenge.jpg) no-repeat center center #f3f3f3;*/
+   /* background-size: cover;
+    height: 300px !important;*/
+}
+.default-challenge-thumb-lg {
+    /*background: url(https://idealinkcdn.s3.amazonaws.com/Client/OPG/images/Name-the-portal-Challenge.jpg) no-repeat center center #f3f3f3;*/
+    background-size: cover;
+}
+.challenge-response .challenge-details {
+    padding-left: 300px;
+}
+.challenge-info .challenge-date{display:none;}
+.main-content {
+    border: 0;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.body-content-admin{
+  padding:0px 40px;
+}
+.provide-feedback {
+    background: url(https://idealinkcdn.s3.amazonaws.com/Client/OPG/images/feedback.jpg) no-repeat scroll 10px 15px #5D2684;
+}
+.provide-feedback:hover {
+    border-top: 1px solid #cccccc;
+    border-left: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    padding: 6px;
+    background-position: 10px 15px;
+}
+.advancedSearch{
+background-color: red !important;
+}
+
+.advancedSearch:hover{
+background-color:black !important;
+}
+.advancedSearch a{
+color:white !important;
+  text-decoration: none !important;
+}
+.hero-banner{
+	margin-bottom: 30px !important;
+}
+.hero-banner h1{
+	color: #5D2684;
+    font-size: 50px;
+    line-height: 55px;
+    font-weight: bold;
+	margin-bottom:0;
+}
+.hero-banner p.lead{
+	color:#4D4D4F;
+	font-size:26px;
+	line-height:30px;
+	margin-bottom: 20px;
+	font-weight:bold;
+}
+.hero-banner .btn-banner{
+	color:#ffffff !important;
+	Background-color:#5D2684 !important;
+	padding:11px 20px;
+	border-radius:0px;
+	margin-right: 10px;
+  	border: 0px;
+  	font-weight: bold;
+	font-size: 20px !important;
+	line-height:26px;
+  	text-transform: uppercase;
+}
+.hero-banner .btn-banner:hover{
+	color:#ffffff !important;
+	Background-color:#4D4D4F !important;
+ 	border: 0px;
+}
+.hero-banner .banner-icon{
+	width:80px;
+	height:80px;
+	display:inline-block;
+	background-color:#5D2684;
+	padding:10px;
+	margin-bottom:20px;
+}
+.hero-banner .banner-icon img{
+	width:80px;
+	height:80px;
+}
+.trending-ideas-section{
+	background-color:#efefef;
+	border: 1px solid #666666;
+	padding:15px;
+	margin-top: 6%;
+	margin-bottom: 6%;
+}
+    
+.trending-ideas-section .span4.thumbnail{
+	background: #ffffff;
+	height:320px;
+	position:relative;
+}
+.Home-master-page .carousel {
+	margin-bottom: 0;
+	padding: 0 40px 30px 40px;
+}
+.Home-master-page .carousel-indicators {
+	right: 50%;
+	top: auto;
+	bottom: 0px;
+	margin-right: -19px;
+}
+.Home-master-page .carousel-control {
+	text-decoration: none;
+}
+.Home-master-page .carousel-control.right {
+	left: auto;
+}
+.carousel-control {
+	color: white !important;
+	background: #666666;
+}
+.Home-master-page .carousel-indicators li {
+    background-color: #cccccc;
+}
+.Home-master-page .carousel-indicators .active {
+    background-color: #444;
+}
+.item-content-container{
+	background-color:#1884c4;
+	color:#ffffff;
+    height: 150px;
+	padding:10px;
+}
+.item-content-container a{
+	color:#ffffff;
+}
+.item-content-container .metadata-item{font-size:14px;}
+.item-content-container .metadata-item i{vertical-align:middle;}
+.center-layout{
+  	width: 1170px;
+  	margin: 0 auto;
+}
+.block-container h1{
+	background-color:#5D2684;
+	color:#ffffff;
+	text-transform:uppercase;
+	margin-top:0;
+	margin-bottom:0;
+	font-size:22px;
+	font-weight:300;
+}
+.block-container{
+	border: 1px solid #c7c7c7;
+	background-color:#ffffff;     
+}
+.block-container .block-content{
+	padding:15px;
+}
+.video-container {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	height: 0;
+	overflow: hidden;
+}
+.video-container iframe, .video-container object, .video-container embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.leaderboard-table-container .table th, .leaderboard-table-container .table td {
+	padding: 12px;
+	vertical-align: middle;
+}
+#People .dt-ideareviewer,#People .dd-ideareviewer{
+	display:none;
+}
+.words-left-Title,
+.words-left-Description,
+.words-left-Title-Edit,
+.words-left-Description-Edit{
+  display: inline-block;
+  padding: 4px 8px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+.words-left-Title i,
+.words-left-Description i,
+.words-left-Title-Edit i,
+.words-left-Description-Edit i{
+  display: inline-block;
+  margin-right: 6px;
+  vertical-align:middle;
+  margin-bottom: 3px;
+}
+/*.Home-master-page .submit-idea-page, 
+.Ideas-master-page .submit-btn,*/
+.Ideaview-master-page #documents .idea-section-header,
+.Ideaview-master-page .ideaview-table-of-contents,
+#liResources{
+  display: none;
+}
+.Ideas-master-page h1.idea-list-title {
+    margin-bottom: 25px;
+}
+
+.SubmitAnIdea-master-page {
+  	/*background: url('https://idealinkcdn.s3.amazonaws.com/Client/HydroOne/images/hydro-onbe-planbox-main-image.png') no-repeat fixed;*/
+  	background-size: cover;
+}
+.SubmitAnIdea-master-page header {
+	height: 50px;
+}
+.SubmitAnIdea-master-page .sub-container.container-fluid.full-width {
+    padding-top: 60px;
+}
+.SubmitAnIdea-master-page .submitidea-page form{
+  	float: none;
+    width: 60%;
+	margin:0 auto;
+  	color: white;
+  	/*background-color: rgb(0, 146, 163);*/
+	background-color: #5D2684;
+  	padding: 10px 10px;
+	margin-top: 0;
+    border-radius: 0;
+}
+.SubmitAnIdea-master-page .submitidea-page > h4{
+	float: right;
+    width: 60%;
+    color: white;
+    background-color: rgb(0, 146, 163);
+    padding: 10px 10px;
+    margin-bottom: 0;
+    border-radius: 0;
+}
+.SubmitAnIdea-master-page .submitidea-page .challenge-response{
+	float: right;
+    width: 60%;
+    color: white;
+    background-color: rgb(0, 146, 163);
+    padding: 10px 10px;
+    margin-bottom: 0;
+    border-radius: 0;
+}
+.SubmitAnIdea-master-page .submitidea-page .ideaview-content{background:#ffffff;}
+.SubmitAnIdea-master-page .main-content{padding-left:0px;}
+.SubmitAnIdea-master-page .submitidea-page form .div-main-concept.span8{
+ 	width: 100%; 
+}
+.SubmitAnIdea-master-page .swMain .stepContainer .StepTitle, 
+.SubmitAnIdea-master-page .div-main-concept.span8 .controls .help-block,
+.SubmitAnIdea-master-page .div-main-concept.span8 .dynatree-title{
+  	color: white;
+}
+.SubmitAnIdea-master-page .submitidea-page ul.dynatree-container a:hover {
+    /*background: rgb(0, 146, 163);*/
+	background: #4D4D4F;
+}
+.SubmitAnIdea-master-page .submitidea-page span.dynatree-active a {
+	background-color: transparent !important;
+}
+.SubmitAnIdea-master-page .submitidea-page .challenge-info{
+ 	color: #ffffff; 
+}
+.SubmitAnIdea-master-page .submitidea-page span.dynatree-radio{
+  background-image: url('//idealinkcdn.s3.amazonaws.com/Client/Ally/images/icons.png');
+}
+.SubmitAnIdea-master-page .main-content.horizontal-menu {
+ 	background: transparent; 
+}
+.SubmitAnIdea-master-page .challenge-response .challenge-details {
+    padding-left: 150px;
+}
+.SubmitAnIdea-master-page .challenge-response {
+    background-color: transparent;;
+    border: none;
+}
+.SubmitAnIdea-master-page .challenge-details h4 a {
+  	color: #ffffff;
+}
+.SubmitAnIdea-master-page ul.anchor li a, .SubmitAnIdea-master-page .submitidea-page .swMain ul.anchor li a.selected{
+	background-color: transparent !important;
+  	border-right: none;
+}
+.SubmitAnIdea-master-page ul.dynatree-container{
+ 	background-color: transparent; 
+}
+.SubmitAnIdea-master-page ul.dynatree-container a{
+ 	border: none; 
+}
+ .challenge-info{
+  	display: none;
+}
+.SubmitAnIdea-master-page .main-content{
+ 	padding-right: 0px; 
+}
+.SubmitAnIdea-master-page form#wizard ul.anchor span{
+	font-weight: bold; 
+  	background-color: #5D2684; 
+  	color: white; 
+  	text-decoration: underline;
+}
+.SubmitAnIdea-master-page form#wizard ul.anchor,
+.SubmitAnIdea-master-page form#wizard ul.anchor li,
+.SubmitAnIdea-master-page form#wizard ul.anchor li a{
+ 	width: 100%; 
+}
+.SubmitAnIdea-master-page form#wizard ul.anchor{
+ 	text-align: center; 
+}
+.SubmitAnIdea-master-page [currentid="96"],
+.SubmitAnIdea-master-page [currentid="108"],
+.SubmitAnIdea-master-page [currentid="109"]{
+ 	text-align: center; 
+}
+.SubmitAnIdea-master-page #instruction{
+ 	border-top: 3px solid white;
+  	border-bottom: 3px solid white;
+}
+#idea-list .item .idea-details .idea-thumbnail-container img[src*="https://d32ekf2zat2q3c.cloudfront.net/Idealink/images/icon-default-thumb.png"]{
+ 	content:url("//idealinkcdn.s3.amazonaws.com/Client/HydroOne/images/default-thumbnail.png");
+	height: 160px;
+}
+.div-main-concept .control-group.span12{padding-left:0px;}
+#response_Field_IsHidden + .help-block{display:none;}
+.SubmitAnIdea-master-page #idea-description-box .controls textarea{
+ 	height: 50px; 
+}
+.SubmitAnIdea-master-page [currentid="100"] textarea{
+ 	height: 70px; 
+}
+.SubmitAnIdea-master-page #next{
+  	border: 1px solid #5D2684;
+    color: #ffffff!important;
+    background-color: #5D2684 !important;
+    margin-left: 5px;
+}
+.SubmitAnIdea-master-page #next:hover{
+  	background-color: #4D4D4F !important;
+  	color: white !important;
+	border: 1px solid #4D4D4F;
+}
+.SubmitAnIdea-master-page #saveasdraftbtn{
+	    background-color: #ffffff !important;
+    color: #5D2684!important;
+    border: 1px solid #5D2684;
+}
+.SubmitAnIdea-master-page #saveasdraftbtn:hover{
+	border: 1px solid #4D4D4F;
+	color: white !important;
+	background-color: #4D4D4F !important;
+}
+.SubmitAnIdea-master-page .pull-right.navigation-btn{
+	margin-top: 20px;
+}
+.Challengedetails-master-page .challenge-view-details .thumbnail img{
+  width: 250px;
+  height: 250px;
+}
+.Ideaview-master-page #bottom-menu .idea-task.open{
+  width: 750px;
+  height: 550px;
+}
+#bottom-menu .idea-task .content {
+    height: 605px;
+}
+.challenge-page-title{
+    width: auto;
+}
+.btn-group.challenge-select-view{
+  display: inline-block;
+}
+#challenge-tiles-container .card .challenge-thumb-stats {
+    background-color: #5D2684 !important;
+    background-image: -moz-linear-gradient(top, #5D2684, #0092B0);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#5D2684), to(#0092B0));
+    background-image: -webkit-linear-gradient(top, #5D2684, #0092B0);
+    background-image: -o-linear-gradient(top, #33bbff, #006699);
+    background-image: linear-gradient(to bottom, #5D2684, #0092B0);
+}
+.Challengedetails-master-page .bannerContent-setup-style{
+ 	height: 250px; 
+}
+.Challengedetails-master-page .challenge-view-details .grid-bg {
+    background-color: transparent !important;
+    background-image: none !important;
+    background-image: none !important;
+}
+.Challengedetails-master-page .challenge-background-banner{
+  	background-image: none !important;
+}
+.Challengedetails-master-page .challenge-hero-header{
+  	color: #5D2684;
+}
+.Challengedetails-master-page .challenge-hero-header{
+ 	margin-bottom: 0px; 
+}
+.Challengedetails-master-page .grid-bg{
+ 	margin-bottom: 25px !important; 
+}
+.SubmitAnIdea-master-page #validation-summary{
+ 	z-index: 10000; 
+}
+.Challenges-master-page .btn.create-challenge{
+	background-color: #5D2684 !important;
+    text-shadow: none;
+    color: #ffffff !important;
+    box-shadow: none !important;
+    border: 0;
+}
+.Challenges-master-page .btn.create-challenge:hover{
+	background-color: #000000 !important;
+}
+@media (min-width: 979px) and (max-width: 1024px){
+  	.Home-master-page .center-layout {
+		width: 100%;
+	}
+	.Home-master-page .container-fluid {
+		padding-right: 0px;
+		padding-left: 0px;
+	}
+	header .header-navbar, header .horizontal-top-menu {
+		width: 100%;
+	}
+	.Challengedetails-master-page .sub-container{
+		width: 100%;
+	}
+	.Challengedetails-master-page .challenge-view-responses {
+		padding: 0px 10px;
+	}
+	.SubmitAnIdea-master-page .sub-container {
+		width: 100%;
+		margin-right: 20px;
+	}
+	.submitidea-page .anchor li .first.selected {
+		padding-left: 0px!important;
+	}
+}
+@media (max-width: 480px) {
+  	.horizontal-top-menu .navbar-inner .nav {
+    	float: left;
+	}
+  	.navbar-form .input-append, .navbar-form .input-prepend {
+        width: 100%;
+    }
+  	.navbar-inner {
+    	padding-left: 0px;
+  	}
+	.navbar .brand {
+		margin-left: 10px;
+	}
+	#activities-notification-container {
+		float: left;
+		margin-left: 38px;
+	} 
+	body{
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	.Challengedetails-master-page .sub-container.container-fluid {
+		padding-right: 10px;
+		padding-left: 10px;
+	}
+	.Challengedetails-master-page .sub-container {
+		width: 90%; 
+	}
+	.Challengedetails-master-page #activities-notification-container {
+		margin-left: 0px;
+	}
+  	header .header-navbar, header .horizontal-top-menu {
+		width: 100%;
+	}
+	.center-layout {
+		width: 100%;
+	}
+	.Home-master-page .hero-banner {
+		margin: 40px 0 !important;
+	}
+	.Home-master-page .hero-banner .lead{
+		font-size: 18px;
+	}
+	.Home-master-page .hero-banner h1 {
+		font-size: 50px;
+		line-height: 60px;
+	}
+	.Home-master-page .hero-banner .btn-banner {
+		padding: 10px 15px;
+		font-size: 15px;
+	}
+	.Home-master-page #topcontributorshelp{
+		margin-top: 20px;
+	}
+	.Home-master-page #contributorTable thead tr th{
+		font-size: 13px !important;
+		width: 30% !important;
+	}
+	.Home-master-page #contributorTable thead tr th span{
+		font-size: 10px !important;
+	}
+	.Home-master-page #contributorTable thead tr th:last-child{		
+		width: 20% !important;
+	}
+	.Home-master-page #contributorTable thead tr th:first-child {
+		width: 50% !important;
+	}
+	.Home-master-page .leaderboard-table-container .table th, .Home-master-page .leaderboard-table-container .table td{
+		padding: 0px;
+	}
+	.Home-master-page #vertical-ticker-contributorTable{
+		height: 295px !important;
+	}
+	.Home-master-page .block-content.leaderboard-table-container.columntagcloud{
+		height: 350px !important;
+	}
+	.SubmitAnIdea-master-page .main-content .main-content-inner {
+		margin-top: 20px;
+	}
+	.SubmitAnIdea-master-page .submitidea-page > h4,
+	.SubmitAnIdea-master-page .submitidea-page .challenge-response,
+	.SubmitAnIdea-master-page .submitidea-page form{
+		width: 100%;
+	}
+	.SubmitAnIdea-master-page .submitidea-page form{
+		padding: 10px 0px;
+	}
+	.SubmitAnIdea-master-page .submitidea-page > h4 {
+		padding: 5px 0px;
+	}
+	.SubmitAnIdea-master-page .swMain .stepContainer{
+		padding: 5px 5px;
+	}
+	.SubmitAnIdea-master-page .submitidea-page .challenge-response {
+		padding: 5px 0px;
+	}
+	.SubmitAnIdea-master-page .sub-container{
+		width: 100%;
+	}
+	.SubmitAnIdea-master-page #actionBar{
+		margin-right: 10px;
+	}
+	.SubmitAnIdea-master-page ul.anchor li a{
+		padding: 0px !important;
+	}
+	.submitidea-page .anchor li .first.selected {
+    padding-left: 0px!important;
+}
+}
+#challenge-tiles-container article .challenge-thumb-stats{
+  height: 162px;
+}
+.m-backtotop, .m-backtotop:hover {
+ 	background: #5D2684;
+}
+#admin-dashboard .dashboard-item .submenu-content .span3 {
+ 	width: 200px !important; 
+}
+#new-header-theme > .navbar-inner {
+    background-color: #5D2684;
+}
+#new-header-theme .brand.header-logo {
+    background-color: transparent;
+  	width: 100px;
+}
+#new-header-theme .brand.header-logo img {
+ 	height: 35px !important; 
+}
+#profile-section > a > img {
+    border: 3px solid #5D2684;
+}
+#google_translate_element a {
+  	font-size: 16px;
+}
+#google_translate_element a:hover, .goog-te-gadget:hover {
+ 	background-color:  #5D2684 !important;
+  	background-image: none !important;	
+  	color: white !important;
+}
+.span11.new-theme-idea-info {
+ 	margin-left: 20px !important; 
+}
+#activity-negative-vote-count{
+	display:none;
+}
+.profile-sub-menu .navbar .nav > .active > a, 
+.profile-sub-menu .navbar .nav > .active > a:hover, 
+.profile-sub-menu .navbar .nav > .active > a:focus{
+	color: #555555;
+    text-decoration: none;
+    background-color: #e5e5e5;
+}
+.bannerContent .challenge-community{
+	background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    padding: 0px 10px;
+}
+.bannerContent .challenge-hero-header{
+  	background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+}
+.submitidea-page > h4, .submitidea-page .challenge-response {
+ 	float: none !important;
+  	margin: 0 auto;
+  	background-color: #5D2684 !important;
+}
+.advanced-search-customproperties {
+ 	display: block; 
+}
+.advanced-search-categories .select2-container .select-group a {
+    right: 0% !important;
+    left: auto !important;
+    height: 24px;
+}
+.advanced-search-categories .select2-choices {
+    display:block;
+}
+.cont {
+    width: 98% !important;
+}
+header {
+    height: auto;
+}
+.user-activity-view .list-group .list-group-item {
+    color: #5D2684;
+}
+.user-activity-view .list-group .list-group-item .list-group-item-number {
+    background-color: #5D2684;
+}
+.main-profile .profile-background {
+    background: #5D2684;
+}
+.main-profile .profile-header img {
+    border: 5px solid #5D2684;
+  	background-color: #ffffff;
+}
+.new-reply-list li:before {
+    height: 0px !important;
+}
+#begin-comment-list, #end-comment-list {
+    width: 0px !important;
+}
+.comment-grandchild-connector {
+    width: 0px !important;
+}
+.new-header-menu .dropdown-menu > .active > a, .new-header-menu .dropdown-menu > .active > a:hover, .new-header-menu .dropdown-menu > .active > a:focus {
+    color: white !important;
+    background-color: #5D2684;
+    background-image: none;
+    filter: none;
+}
+.btn-group.challenge-select-view{
+	display:none;
+}
+.challenge-title-bar .challenge-page-title{
+	width:100%;
+}
